@@ -244,6 +244,7 @@ export default merge.smart(baseConfig, {
       poll: 100
     },
     historyApiFallback: {
+      rewrites: [{ from: /./, to: '/dist/app.html' }],
       verbose: true,
       disableDotRule: false,
     },
